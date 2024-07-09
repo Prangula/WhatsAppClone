@@ -1,13 +1,9 @@
-package com.example.whatsappclone
+package com.example.whatsappclone.ui
 
 import android.content.Intent
 import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import androidx.lifecycle.lifecycleScope
-import com.example.whatsappclone.databinding.ActivityMainBinding
 import com.example.whatsappclone.databinding.ActivitySplashScreenBinding
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
@@ -23,8 +19,8 @@ class SplashScreen : AppCompatActivity() {
 
         lifecycleScope.launch {
 
-            delay(2000)
-            val intent = Intent(this@SplashScreen,MainActivity::class.java)
+            delay(1000)
+            val intent = Intent(this@SplashScreen, MainActivity::class.java)
             startActivity(intent)
             finish()
 
