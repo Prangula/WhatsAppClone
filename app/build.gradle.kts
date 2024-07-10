@@ -81,4 +81,8 @@ dependencies {
     // CircleImageView
     implementation (libs.circleimageview)
 
+    // Dexter
+    implementation (libs.dexter)
+    implementation(kotlin("script-runtime"))
+
 }
